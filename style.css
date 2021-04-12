@@ -82,7 +82,7 @@ ol, ul {
     min-width: 13rem;
     max-width: 92%;
     border-radius: 50%;
-    background-image:url(photo1.jpg);
+    background-image:url(photo.jpg);
     background-repeat: no-repeat;
     background-position:center center;
     background-size: cover;
@@ -176,16 +176,15 @@ ol, ul {
     border-top: 1px solid #ccc;
 }
 .main-item > .content > ol>li.listItem >.title,
-.main2 .portfolio>.title {
+.main2 .portfolio .title {
     display: flex;
     justify-content: center;
-    padding: 10px;
     font-size: 18px;
 }
 .main-item > .content > ol>li.listItem >.title>span:last-child,
-.main2 .portfolio>.title>span:last-child
+.main2 .portfolio .title>span:last-child
  {
-     margin-left: 20px;
+    margin-left: 20px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -199,17 +198,25 @@ ol, ul {
     padding: 0 1rem;
 }
 .main2 .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
     padding-bottom: 20px;
+    line-height: 1.8em;
     border-bottom: 1px solid #ccc;
 }
 .main2 .portfolio:last-child {
     border-bottom: none;
 }
-.main2 .portfolio>.content {
-    display: flex;
-    line-height: 1.8em;
-}
-.main2 .portfolio>.content>img {
+.main2 .portfolio>.img-wrapper {
     margin-right: 4%;
+    margin-top: 24px;
     width: 40%;
+    flex-shrink: 0;
+}
+.main2 .portfolio>.link-wrapper {
+    width: 56%;
+}
+.main2 .portfolio>.desc {
+    margin-top: 10px;
 }
