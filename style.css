@@ -16,7 +16,15 @@ a {
 img {
     width: 100%;
 }
+ol, ul {
+    list-style: none;
+}
 /*  common */
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
 .tac {
     text-align: center;
 }
@@ -27,20 +35,44 @@ img {
     margin-left: 1em;
     text-indent: -1em;
 }
+.emphasize, .important {
+    margin: 0 2px;
+    border: 1px solid #cfd8dc;
+    border-radius: 3px;
+    background-color: #eee;
+    line-height: 1em;
+}
+
+.emphasize {
+    color: #2196f3;
+}
+
+.important {
+    color: #E91E63;
+}
 
 /* page */
 .wrapper {
     margin: .1rem auto;
+    margin-bottom: 2rem;
     padding-top: 1.2rem;
-    display: flex;
     min-width: 900px;
     max-width: 90%;
     border: 2px solid #CEE298;
     border-radius: 12px;
 }
+.main {
+    float: left;
+    width: 70%;
+}
+.main2 {
+    float: left;
+}
 .user {
+    float: left;
     margin-left: 4%;
     margin-bottom: 2rem;
+    padding-bottom: 2rem;
     max-width: 26%;
     border-radius: 1000px 1000px 12rem 12rem;
     background-color: #CEE298;
@@ -94,7 +126,6 @@ img {
     word-break: break-all;
 }
 .main {
-    width: 70%;
     padding: 0 1rem;
 }
 .main > .header {
@@ -117,10 +148,10 @@ img {
     text-align: center;
     font-size: 1.2rem;
 }
-.main > .item {
+.main-item {
     margin-top: 1.2rem;
 }
-.main > .item > .title {
+.main-item > .title {
     padding: .2rem;
     text-align: center;
     font-size: 1.2rem;
@@ -130,14 +161,55 @@ img {
     color: #fff;
     box-shadow: 0px 0px 1px 0px #CEE298;
 }
-.main > .item > .content {
+.main-item > .content {
     margin-top: 0.8rem;
     line-height: 1.6rem;
 }
-.main > .item > .content >.line {
+.main-item > .content >.line {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-weight: bold;
 }
-
+.main-item > .content > ol>li.listItem {
+    margin-top: 6px;
+    border-top: 1px solid #ccc;
+}
+.main-item > .content > ol>li.listItem >.title,
+.main2 .portfolio>.title {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 18px;
+}
+.main-item > .content > ol>li.listItem >.title>span:last-child,
+.main2 .portfolio>.title>span:last-child
+ {
+     margin-left: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3px;
+    font-size: .8em;
+    color: #3090e4;
+    background-color: rgba(48, 144, 228, .1);
+    border-radius: 6px;
+}
+.main2 {
+    padding: 0 1rem;
+}
+.main2 .portfolio {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.main2 .portfolio:last-child {
+    border-bottom: none;
+}
+.main2 .portfolio>.content {
+    display: flex;
+    line-height: 1.8em;
+}
+.main2 .portfolio>.content>img {
+    margin-right: 4%;
+    width: 40%;
+}

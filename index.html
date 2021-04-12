@@ -9,13 +9,16 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper clearfix">
         <aside class="user">
             <div class="photo"> </div>
             <div class="item">
                 <div class="title">about me</div>
                 <div class="content">
-                    女，25岁，本科，华北科技学院，软件工程专业，两年前端开发经验
+                    女，25岁，本科，华北科技学院，软件工程专业，两年前端开发经验<br>
+                    自学 react，移动端两年开发经验，熟悉 Ionic、Angular、TypeScript、SCSS，了解 Android native 开发。<br>
+                    写文档、写注释、写干净的代码，致力于让一切东西条理化。<br>
+                    热爱编程，乐于学习新的技术。
                 </div>
             </div>
             <div class="item">
@@ -27,7 +30,8 @@
                     </p>
                     <p class="next-indent">
                         CSDN 博客：<br>
-                        <a target="_blank" href="https://blog.csdn.net/writing_happy">https://blog.csdn.net/writing_happy</a>
+                        <a target="_blank"
+                            href="https://blog.csdn.net/writing_happy">https://blog.csdn.net/writing_happy</a>
                     </p>
                     <p class="next-indent">
                         GitHub 主页：<br>
@@ -42,6 +46,14 @@
                         电子邮箱：<br>
                         <a target="_blank" href="mailto:wenchuyang@foxmail.com">wenchuyang@foxmail.com</a>
                     </p>
+                    <p class="next-indent">
+                        微信：
+                        writing_happy
+                    </p>
+                    <p class="next-indent">
+                        手机号：
+                        00000000000
+                    </p>
                 </div>
             </div>
         </aside>
@@ -55,50 +67,241 @@
                 </div>
             </div>
             <h2 class="header2">求职岗位：前端开发工程师</h2>
-            <div class="item">
+            <div class="main-item">
                 <div class="title">
                     personal skills
                 </div>
                 <div class="content">
-                    <p class="next-indent">
-                        <strong>HTTP</strong>&emsp;<span>了解 http 协议，能够看懂 http 请求和响应，了解常见状态码含义；</span>
-                    </p>
-                    <p class="next-indent">
-                        <strong>HTML5 & CSS3</strong>&emsp;可以根据 HTML5 标准编写语义化的文档结构，掌握 CSS 选择器、常见样式、堆叠上下文、常用居中方案
-                        以及常见布局（float 布局和 flex 布局），能使用纯 CSS 实现一些简单有趣的效果比如旋转的太极图。
-                    </p>
+                    <ol>
+                        <li class="next-indent"><strong>React</strong>&emsp;理解 react 思想，熟悉 <span
+                                class="emphasize">react</span>、<span class="emphasize">redux</span>、<span
+                                class="emphasize">react-router</span>，能够使用 <span class="emphasize">Hooks</span>、<span
+                                class="emphasize">Context</span> 进行 react 开发，了解
+                            <span class="emphasize">css-in-js</span> 的样式方案，能够使用 <span
+                                class="emphasize">styled-component</span> 。
+                        </li>
+                        <li class="next-indent"><strong>TypeScript</strong>&emsp;熟练使用 TypeScript 进行开发，了解静态类型检查。</li>
+                        <li class="next-indent"><strong>SCSS</strong>&emsp;了解 @mixin、@include、@function
+                            等的使用，熟练使用变量和嵌套，能够根据不同的问题去查询不同的解决方案。
+                        </li>
+                        <li class="next-indent"><strong>移动端</strong>&emsp;熟悉基于 <span class="emphasize">Angular</span> 的
+                            <span class="emphasize">Ionic</span> 使用、环境配置、打包等；熟悉 Android APP 创建、打包等系列流程，了解 <span
+                                class="emphasize">Android
+                                native</span> 开发。
+                        </li>
+                        <li class="next-indent"><strong>Bootstrap</strong>&emsp;初步了解 Bootstrap，能够使用 Bootstrap 快速制作页面。
+                        </li>
+                        <li class="next-indent"><strong>jQuery</strong>&emsp;能够使用 jQuery 进行 DOM 操作，实现 <a
+                                href="https://wenchuyang.github.io/simple-projects/swiper/appleStyle.html">精美轮播图</a> 。
+                        </li>
+                        <li class="next-indent"><strong>Node.js</strong>&emsp;简单了解 node.js，可以使用 nodejs
+                            搭建简单后台，根据浏览器发送的不同请求路径给出不同的响应。</li>
+                        <li class="next-indent"><strong>HTTP</strong>&emsp;了解 <span class="emphasize">http
+                                协议</span>，能够看懂 <span class="emphasize">http
+                                请求和响应</span>，了解常见状态码含义。</li>
+                        <li class="next-indent"><strong>HTML5 & CSS3</strong>&emsp;可以根据 HTML5 标准编写<span
+                                class="emphasize">语义化</span>的文档结构，掌握
+                            <span class="emphasize">CSS 选择器</span>、<span class="emphasize">常见样式</span>、<span
+                                class="emphasize">堆叠上下文</span>、<span class="emphasize">常用居中方案</span>以及<span
+                                class="emphasize">常见布局</span>（float 布局和 flex 布局），能使用纯 CSS 实现一些简单有趣的效果比如 <a
+                                href="https://wenchuyang.github.io/simple-projects/cssImage/taiji.html">旋转的太极图</a> 。
+                        </li>
+                        <li class="next-indent"><strong>原生 JavaScript</strong>&emsp;了解 js 数据在内存中的存储方式，熟悉 DOM 常用 API、JS
+                            数组以及数组的一些常用方法，掌握<span class="emphasize">事件的捕获与冒泡</span>，了解 js 的<span
+                                class="emphasize">变量提升</span>机制，知道 js
+                            <span class="emphasize">闭包</span>、<span class="emphasize">浏览器的同源策略和跨域方法</span>、<span
+                                class="emphasize">JSONP</span>、<span class="emphasize">AJAX</span>、<span
+                                class="emphasize">原型链</span>、<span class="emphasize">继承</span>、<span
+                                class="emphasize">new</span> 和
+                            <span class="emphasize">this</span> 相关知识，理解 MVC 思想并能在实际中运用。
+                        </li>
+                        <li class="next-indent"><strong>响应式</strong>&emsp;可以根据 <span
+                                class="emphasize">viewport</span>，<span class="emphasize">媒体查询</span>以及<span
+                                class="emphasize">动态 rem</span> 制作响应式页面。</li>
+                        <li class="next-indent"><strong>前端构建工具</strong>&emsp;了解 <span
+                                class="emphasize">webpack</span>、<span class="emphasize">babel</span> 的使用。</li>
+                        <li class="next-indent"><strong>CET-4</strong>&emsp;熟练阅读英文文档。</li>
+                    </ol>
                 </div>
             </div>
-            <div class="item">
+            <div class="main-item">
                 <div class="title">
                     WORK EXPERIENCE
                 </div>
                 <div class="content">
                     <div class="line">
-                        <span>2018.08 - 2018.10</span>
-                        <span>杭州云档口科技有限公司</span>
+                        <span>2018/09 - 2020/10</span>
+                        <span>杭州声德科技有限公司</span>
                         <span>前端工程师</span>
                     </div>
-                    <div class="desc indent">主要负责优百仓网站的更新与维护，使用PHP 对原有页面进行修改以及插件的封装。</div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="title">
-                    project experience
-                </div>
-                <div class="content">
-                    <div class="line">
-                        画一只龙猫
-                    </div>
-                    <div class="desc">
-                        <p class="next-indent">预览链接：https://wenchuyang.github.io/css-picture-animation/totoro/</p>
-                        <p class="next-indent">项目描述：使用纯css 画的龙猫，通过js 将过程展示出来，并添加了调速按钮。</p>
-                        <p class="next-indent">
-                            技术栈：html5、css3、javascript、jQuery</p>
-                    </div>
+                    <ol>
+                        <li class="listItem">
+                            <header class="title">
+                                <b>Retail</b>
+                                <span>Ionic3</span>
+                            </header>
+                            <main class="content">
+                                <p class="next-indent">
+                                    <b>软件描述</b>：商店综合管理系统，<span class="emphasize">Ionic3</span> 项目。已在 PAXSTORE
+                                    上发布。该项目中我负责 <span class="important">前端和权限控制</span> 部分。
+                                </p>
+                                <p class="next-indent">
+                                    <b>主要功能</b>：商店员工上下班打卡、商品进销存管理、会员信息管理等
+                                </p>
+                                <p class="next-indent">
+                                    <b>技术栈</b>：Ionic3、Angular4、SCSS、TypeScript、多屏兼容
+                                </p>
+                                <p class="next-indent">
+                                    <b>技术细节</b>：使用 <span class="emphasize">CSS 的变量</span> 实现 <span
+                                        class="important">主题颜色的动态切换</span> 以及
+                                    <span class="important">自定义主题颜色</span> ；使用 <span class="emphasize">SCSS</span> 的
+                                    @mixin, @include 和
+                                    @content 统一 <span class="emphasize">媒体查询</span> ，做 <span
+                                        class="important">多屏兼容</span> ；在用户登录的时候从 SQLite
+                                    数据库中获取权限并将所有权限整合到一起，放在 localStorage 里边，根据权限判断菜单的显示与隐藏、display 与 disable。
+                                </p>
+                            </main>
+                        </li>
+                        <li class="listItem">
+                            <header class="title">
+                                <b>IMPrint</b>
+                                <span>Android</span>
+                            </header>
+                            <main class="content">
+                                <p class="next-indent">
+                                    <b>软件描述</b>：查询店铺订单并打印。原生 <span class="emphasize">Android</span> 项目，已在 PAXSTORE
+                                    发布。该项目
+                                    <span class="important">主要由我负责</span> 。
+                                </p>
+                                <p class="next-indent">
+                                    <b>主要功能</b>：软件激活、订单查询、订单列表展示、订单信息查看并打印。
+                                </p>
+                                <p class="next-indent">
+                                    <b>技术栈</b>：Java、XML
+                                </p>
+                                <p class="next-indent">
+                                    <b>技术细节</b>：
+                                    使用 <span class="emphasize">BoradcastReceiver</span> <span
+                                        class="important">接收广播</span>，获取激活数据，读取激活信息并写入文件；使用 <span
+                                        class="emphasize">OKHttp</span> 发送 <span class="important">POST 请求</span>
+                                    进行订单查询获取数据；使用 <span class="emphasize">Adapter</span> 将数据放到 <span
+                                        class="emphasize">ListView</span> 上，<span class="important">展示订单列表</span>；使用
+                                    <span class="emphasize">intent</span> 进行 <span class="important">页面的跳转</span> 和页面间的
+                                    <span class="important">信息传递</span> ；使用 <span class="emphasize">drawable</span> 绘制
+                                    <span class="important">按钮样式</span> ；使用 <span class="emphasize">BindView</span>
+                                    <span class="important">获取元素</span> 并绑定监听事件；使用 <span class="emphasize">Bitmap</span>
+                                    将订单信息 <span class="important">生成图片</span> ，调用打印接口进行订单信息打印。
+                                </p>
+                            </main>
+                        </li>
+                    </ol>
                 </div>
             </div>
         </main>
+        <div class="main2">
+            <div class="main-item">
+                <div class="title">
+                    project experience
+                </div>
+                <ol>
+                    <li class="portfolio">
+                        <header class="title">
+                            <b>画一只龙猫</b>
+                            <span>CSS</span>
+                        </header>
+                        <main class="content">
+                            <img src="./totoro.png" alt="totoro" srcset="">
+                            <div class="desc">
+                                <p class="next-indent">
+                                    <b>预览链接：</b>
+                                    <a href="https://wenchuyang.github.io/simple-projects/css-picture-animation/totoro/"
+                                    class="btn">https://wenchuyang.github.io/simple-projects/css-picture-animation/totoro/</a>
+                                </p>
+                                <p class="next-indent">
+                                    <b>项目源码：</b>
+                                    <a href="https://github.com/wenchuyang/simple-projects/tree/master/css-picture-animation/totoro"
+                                    class="btn">https://github.com/wenchuyang/simple-projects/tree/master/css-picture-animation/totoro</a>
+                                </p>
+                                <p class="next-indent">
+                                    <b>技术栈：</b>
+                                    CSS, JavaScript
+                                </p>
+                                <p class="next-indent">
+                                    <b>项目描述：</b>该项目使用 <span class="emphasize">jQuery</span> 和 <span class="emphasize">CSS</span>
+                                实现，展示了<span class="important">动态画一只龙猫</span>的过程，并<span
+                                    class="important">添加了调速按钮</span>。用 css 画出来之后，将代码剪切到 js
+                                中去，然后由 js 将代码放到页面的 style 标签里，从而将过程展现出来。
+                                </p>
+                            </div>
+                        </main>
+                    </li>
+                    <li class="portfolio">
+                        <header class="title">
+                            <b>做一个导航</b>
+                            <span>JavaScript</span>
+                        </header>
+                        <main class="content">
+                            <img src="./mynav.png" alt="mynav" srcset="">
+                            <div class="desc">
+                                <p class="next-indent">
+                                    <b>预览链接：</b>
+                                    <a href="https://wenchuyang.github.io/myNav/src/" class="btn">https://wenchuyang.github.io/myNav/src/</a>
+                                </p>
+                                <p class="next-indent">
+                                    <b>项目源码：</b>
+                                    <a href="https://github.com/wenchuyang/myNav" class="btn">https://github.com/wenchuyang/myNav</a>
+                                </p>
+                                <p class="next-indent">
+                                    <b>技术栈：</b>
+                                    JavaScript
+                                </p>
+                                <p class="next-indent">
+                                    <b>项目描述：</b>
+                                    该项目使用 <span class="emphasize">原生JS</span> 实现，实现了 <span class="important">搜索（包括百度搜索和
+                                        Google 搜索）</span> 和
+                                    <span class="important">网页导航</span> 功能。使用 <span class="emphasize">新建 form</span> 的形式发送
+                                    GET 请求实现搜索功能；使用
+                                    <span class="emphasize">localStorage</span> 存储虚拟按键对应的网址；监听键盘事件打开网址。
+                                </p>
+                            </div>
+                        </main>
+                    </li>
+                    <li class="portfolio">
+                        <header class="title">
+                            <b>我的色卡</b>
+                            <span>React</span>
+                        </header>
+                        <main class="content">
+                            <img src="./colorful.png" alt="colorful" srcset="">
+                            <div class="desc">
+                                <p class="next-indent">
+                                    <b>预览链接：</b>
+                                    <a href="https://wenchuyang.github.io/colorful/build/index.html" class="btn">https://wenchuyang.github.io/colorful/build/index.html</a>
+                                </p>
+                                <p class="next-indent">
+                                    <b>项目源码：</b>
+                                    <a href="https://github.com/wenchuyang/colorful" class="btn">https://github.com/wenchuyang/colorful</a>
+                                </p>
+                                <p class="next-indent">
+                                    <b>技术栈：</b>
+                                    React、styled-components、Hooks、Context
+                                </p>
+                                <p class="next-indent">
+                                    <b>项目描述：</b>
+                                    该项目使用 <span class="emphasize">React</span> 实现，是一个可以 <span
+                                    class="important">点击切换颜色</span>、<span class="important">添加颜色</span>的在线色卡。在 react
+                                的基础上，使用 <span class="emphasize">styled-components</span>
+                                插件进行样式的书写，使用 <span class="emphasize">useState</span> 在函数组件中使用 state，使用 <span
+                                    class="emphasize">Context</span> 进行全局样式的传递和修改，使用 <span
+                                    class="emphasize">localStorage</span>
+                                进行色卡的持久化存储。
+                                </p>
+                            </div>
+                        </main>
+                    </li>
+                </ol>
+            </div>
+        </div>
     </div>
 </body>
 
