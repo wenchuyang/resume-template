@@ -148,9 +148,6 @@ ol, ul {
     text-align: center;
     font-size: 1.2rem;
 }
-.main-item {
-    margin-top: 1.2rem;
-}
 .main-item > .title {
     padding: .2rem;
     text-align: center;
@@ -167,7 +164,7 @@ ol, ul {
 }
 .main-item > .content >.line {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     font-weight: bold;
 }
@@ -195,7 +192,7 @@ ol, ul {
     border-radius: 6px;
 }
 .main2 {
-    padding: 0 1rem;
+    padding: 1.2rem 1rem;
 }
 .main2 .portfolio {
     display: flex;
