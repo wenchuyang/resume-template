@@ -149,6 +149,7 @@ ol, ul {
     font-size: 1.2rem;
 }
 .main-item > .title {
+    margin-top: .8rem;
     padding: .2rem;
     text-align: center;
     font-size: 1.2rem;
@@ -203,6 +204,7 @@ ol, ul {
     border-bottom: 1px solid #ccc;
 }
 .main2 .portfolio:last-child {
+    padding-bottom: 0;
     border-bottom: none;
 }
 .main2 .portfolio>.img-wrapper {
